@@ -1,0 +1,486 @@
+/*------------------- General Structure -------------------*/
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    flex: 50%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.lessRight {
+    margin-right: 3%;
+}
+
+.lessLeft {
+    margin-left: 3%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textBlock {
+    font-size: 20px;
+    word-spacing:-2px;
+    display: table-row;
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+    height: 80%;
+}
+
+.textBlock > span {
+    display: block;
+}
+
+/*------------------- INTRODUCTION -------------------*/
+.planetImage {
+    vertical-align: middle;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/*------------------- GLOBAL OVERVIEW -------------------*/
+.mapLeft {
+    flex: 10%;
+    display: table-row;
+    height: 70vh;
+    padding-left: 4%;
+    margin-top: 4%;
+}
+
+.mapRight {
+    margin-left: -5%;
+    flex:75%
+}
+
+#countryData {
+    padding: 0;
+    margin: 0;
+}
+
+#countryData > span {
+    padding: 0;
+    margin: 0;
+}
+
+#slider-time {
+    display: flex;
+    justify-content: center;
+}
+
+#mapChart {
+    height: 70vh;
+}
+
+#legends {
+    height: 10vh;
+}
+
+.click_me_left {
+  position:absolute;
+  height: 6%;
+  top: 15%;
+  right: 23%;
+}
+
+/*------------------- ENERGY -------------------*/
+.energy_title {
+  margin-top: 0;
+}
+
+#energy_section strong {
+  color: #fca311;
+}
+
+.height60{
+    height: 60vh;
+}
+
+.scrollable {
+    margin-right: 0;
+    overflow-y: scroll;
+}
+
+.lightbulbImage {
+    width: 42%;
+    margin-right: 6%;
+    height: 40%;
+}
+
+.buttons-energy {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.buttons-energy > button {
+    margin: 50px 50px 0;
+}
+
+.buttons-energy .textButton {
+  background-color: #fca311;
+}
+
+.buttons-energy .textButton:hover {
+  background-color: #f3722c;
+}
+
+
+#energyHeader {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#energyChart {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 85%;
+  padding: 0
+}
+
+.click_me_right {
+  height: 6%;
+  margin-left: 47%;
+}
+
+/* enables scrollbar to show consistently, also on mac */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+/*------------------- INDUSTRY -------------------*/
+#industryviw {
+  width: 40%;
+  height: 50%;
+}
+
+#industry_section strong {
+  color: #495057;
+}
+
+.industryTooltip {
+    margin-left: 190px;
+}
+
+
+/*------------------- AGRICULTURE -------------------*/
+.columnsImage {
+    width: 20%;
+    height: auto;
+}
+
+.agriculture_title {
+  margin-top: 0;
+}
+
+#agriculture_section strong {
+  color: #4daf4a;
+}
+
+
+#agriculture_plot {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-agriculture {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.buttons-agriculture > a {
+  margin: 50px;
+}
+
+
+.buttons-agriculture .button {
+  background-color: #a7c957;
+
+}
+
+.buttons-agriculture .button.active {
+  background-color: #6a994e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttons-agriculture .button:hover {
+  background-color: #a7c957;
+}
+
+.buttons-agriculture .button.active:hover {
+  background-color: #6a994e;
+}
+
+/*------------------- TRANSPORT -------------------*/
+#transportation_section strong {
+  color: #023e8a;
+}
+
+.move_me {
+  position:absolute;
+  height: 6%;
+  top: 70%;
+  right:45%;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topPadding20{
+    padding-top: 20px;
+}
+
+/*------------------- REFERENCES -------------------*/
+
+.references {
+    font-size: 20px;
+    display: table-row;
+    text-align: left;
+    height: 80%;
+}
+
+.references > span {
+  display: block;
+}
+
+
+/*------------------- FULLPAGE.JS STYLING -------------------*/
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 68%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 25px;
+    width: 0;
+    border-width: 9.75px 8.5px 9.75px 0;
+    border-color: transparent black transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 25px;
+    border-width: 9.75px 0 9.75px 8.5px;
+    border-color: transparent transparent transparent black;
+}
+
+/* navigation dots color */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: black!important;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 1px;
+    color: black;
+    font-size: 9px;
+    font-family: helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+/*------------------- BUTTONS -------------------*/
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #023e8a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #023e8a}
+
+.button:active {
+  background-color: #023e8a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.textButton {
+    padding: 5px 7px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+}
+
+.textButton:hover {background-color: #3e8e41}
+
+.textButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.secTextButton {
+    padding: 5px 7px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #6e867a;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+}
+
+.secTextButton:hover {background-color: #3f4942
+}
+
+.secTextButton:active {
+    background-color: #2e322e;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+/*------------------- TOOLTIPS -------------------*/
+text{
+    pointer-events:none;
+}
+
+.details{
+    color: black;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.names {
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+.d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Helvetica, sans-serif;
+    padding: 6px;
+    background: white;
+    color: #a7c957;
+    pointer-events: none;
+    position:absolute;
+    z-index: 100000;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 8px;
+    width: 100%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    pointer-events: none;
+
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+    content: "\25BC";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+    content: "\25C0";
+    margin: -4px 0 0 0;
+    top: 50%;
+    left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+    content: "\25B2";
+    margin: 0 0 1px 0;
+    top: -8px;
+    left: 0;
+    text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+    content: "\25B6";
+    margin: -4px 0 0 -1px;
+    top: 50%;
+    left: 100%;
+}
+
+
+

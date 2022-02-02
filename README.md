@@ -1,4 +1,3 @@
-# DataVisualization
 # Global Warming - Why emissions matter and where they come from 🌱🌡️
 Student Project from the Course COM-480 Data Visualization Course at EPFL
 
